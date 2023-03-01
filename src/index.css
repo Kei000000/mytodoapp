@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffd89b;
+  background: linear-gradient(
+    126deg,
+    #ffd89b 0%,
+    #19547b 96%
+  );
+  background-size: 200% 200%;/*サイズを大きくひきのばす*/
+  animation: bggradient 20s ease infinite;
+  height: 100vh;
+  color: #ffffff;
+  line-height: 1.5;
+  font-family: "M PLUS 1p";
+}
+
+@keyframes bggradient{
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.trello {
+  display: flex;
+  align-items: flex-start;
+}
+
+.trello-section {
+  width: 400px;
+  /* border: 1px solid white; */
+  background: rgb(30, 25, 31);
+  background: linear-gradient(
+    126deg,
+    rgba(30, 25, 31, 1) 0%,
+    rgba(51, 45, 54, 1) 96%
+  );
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.trello-section-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 10px 0 20px;
+}
+
+.card {
+  padding: 30px;
+  background: rgb(145, 137, 145);
+  background: linear-gradient(126deg, rgb(79, 73, 79) 0%, rgb(68, 64, 69) 96%);
+  border-radius: 10px;
+  margin-top: 10px;
+}
